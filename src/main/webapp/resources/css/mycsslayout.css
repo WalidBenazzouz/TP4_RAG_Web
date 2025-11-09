@@ -1,0 +1,82 @@
+/* --- Mise en page générale --- */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f7f9fa;
+    color: #333;
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    color: #1a5276;
+}
+
+/* --- Organisation des colonnes --- */
+.topAligned {
+    vertical-align: top;
+}
+
+/* --- Zones de texte --- */
+textarea {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(46, 134, 193, 0.6);
+}
+
+/* --- Boutons --- */
+button, input[type="submit"] {
+    background-color: #2e86c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    margin: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #1b4f72;
+}
+
+button:active, input[type="submit"]:active {
+    transform: scale(0.97);
+}
+
+/* --- Grilles --- */
+#paneltotal {
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* --- Éléments spécifiques --- */
+#conversation {
+    background-color: #fcfcfc;
+    border: 1px solid #bbb;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+/* --- Messages d’erreur JSF --- */
+.ui-message-error, .ui-messages-error {
+    color: #b71c1c;
+    font-weight: bold;
+}
+
+/* --- Petits ajustements pour PrimeFaces --- */
+.ui-selectonemenu {
+    min-width: 300px;
+}
+
